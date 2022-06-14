@@ -1,14 +1,11 @@
-number = []
-n = int(input("輸入一整數n"))
-number.append(n)
-if n > 0 and n < 1000000:
-    while n == 1:
-        if n % 2 != 0:
-            n = 3*n+1
-            number.append(n)
-        else:
-            n = n/2
-            number.append(n)
-    print(number)
-else:
-    print("不再範圍內")
+n=int(input('輸入一整數1~100'))
+t=[]
+while True:
+    if n==1:
+        break
+    elif n%2!=0:
+        n=3*n+1
+    elif n%2==0:
+        n=n/2
+    t.append(int(n))
+print('數列為:'+str(t))
